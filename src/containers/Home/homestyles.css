@@ -1,0 +1,123 @@
+.home{
+    
+    height: 100%;
+    display: flex;    
+    flex-direction: column;
+    align-content: center;  
+    justify-content: center;
+    background: linear-gradient(0deg, hsl(39, 38%, 79%, 0.52) , hsl(39, 38%, 79%, 0.52) ),
+    url()   no-repeat center center/ cover;
+    
+  
+
+}
+
+.home__text-wapper{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    color: var(--black-theme-main-color);
+    margin: 0px;
+    font-weight: 500;
+    font-size: 5rem ;
+    line-height: 5rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    animation: typingEffectAnimation 2.5s steps(30,end);
+
+}
+
+.para{
+    border-bottom: none;
+    color: var(--black-theme-main-color);
+    font-size: 2rem;
+    
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.home_contact_me{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.home_contact_me button{
+    cursor: pointer;
+    padding: 10px 40px;
+    background: transparent;
+    color: var(--black-theme-main-color);
+    border: 1.5px solid #B4B4B8;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.home_contact_me button:hover{
+    background-color:#B5C0D0;
+    color: #000000;
+    border: none;
+}
+
+
+.home_about_me{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.home_about_me button{
+    cursor: pointer;
+    padding: 10px 40px;
+    background: transparent;
+    color: var(--black-theme-main-color);
+    border: 1.5px solid #B4B4B8;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.home_about_me button:hover{
+    background-color:#B5C0D0;
+    color: #000000;
+    border: none;
+}
+
+@media only screen  and (max-width : 550px){
+    .home__text-wapper h1{
+        font-size: 3rem;
+        line-height: 5rem;
+
+    }
+    
+}
+
+@media only screen  and (min-width : 551px) and (max-width : 768px){
+    .home__text-wapper h1{
+        font-size: 4rem;
+        line-height: 6rem;
+
+    }
+}
+
+@media only screen  and (min-width : 769px) and (max-width: 990px){
+    .home__text-wapper h1{
+        font-size: 6rem;
+        line-height: 8rem;
+
+    }
+}
+@keyframes typingEffectAnimation{
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 40%;
+    }
+}
