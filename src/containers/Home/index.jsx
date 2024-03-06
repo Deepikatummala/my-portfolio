@@ -34,6 +34,7 @@ const handleNavigateToAboutMePage= () => {
           <p className="para">Front-End Developer</p>
     
         </h2>
+        
       </div>
       
 <Animate

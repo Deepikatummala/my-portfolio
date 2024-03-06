@@ -9,7 +9,7 @@ const Projects = () => {
       <section id="rojects" className="projects">
         <PageHeaderContent
           headerText=" My Projects "
-          icon={<BsInfoCircleFill size={40} />}
+ 
         />
         <div className="container">
           <div className="project">

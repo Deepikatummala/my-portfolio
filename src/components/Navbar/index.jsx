@@ -27,6 +27,7 @@ const Navbar = () => {
   const handleToggleIcon = () => {
     setToggleIcon(!toggleIcon);
   };
+  
 
   return (
     <div>
