@@ -1,11 +1,12 @@
 .navbar{
-    background-color: var(--blue-theme-nav-background-color);
-    height: 80px;
+    width: 100%;
+    position: sticky; /* Fixed position to stay on top */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    z-index: 1000;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
+    background-color: var(--blue-theme-nav-background-color );
+    
 }
 
 .navbar__container{
@@ -29,16 +30,13 @@
    
 }
 
-ul li {
-    color: blue;
-  }
+
 
 .navbar__container__menu{
     display: flex;
     gap: 30px;
     list-style: none;
-    list-style-type: style text;
-    
+    margin-top: 20px;    
     text-align: center;
     margin-right: 15%;
 }
@@ -63,7 +61,8 @@ ul li {
 
 .navbar__container__menu__item:hover::after{
     width: 100%;
-     background: var(--black-theme-main-color);
+    
+
 }
 
 .navbar__container__menu__item__links{
@@ -72,8 +71,11 @@ ul li {
     padding: 0.5rem;
 }
 
+
+
 .nav-icon{
     display: none;
+    
 }
 
 @media only screen and (max-width : 768px){
@@ -81,39 +83,50 @@ ul li {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
-        height: 100vh;
+        width: 80%;
+        margin-left: 50px;
+        height: 80vh;
        left: -110%;
         position: absolute;
         top: 50px;
         opacity: 1;
         transition: all 0.5s ease;
         transform: translateY(5vh);
+        border: 10px;
+        border-radius: 10px;
+        
+        
                
 
         &.active{
-            background: black;
+            background: #AAD7D9;
             left: 0px;
-            opacity: 1;
+            opacity: 1;        
+            margin-left: 10%;
            
-            position: absolute;
+           
+       
         
         }
 
         .navbar__container__menu__item__links{
             color: white;
             text-decoration: none;
-            padding: 0.5rem;
+            margin-top: -10px;
+            
+            
         }
+
 
 
     }
 
     .navbar__container__menu__item{
-        border-bottom: 1px solid #282828;
+       
         margin: 0px;
         padding: 20px 0px; 
         color: white;
+        margin-top: -10px;
 
     }
 
@@ -122,6 +135,7 @@ ul li {
         cursor: pointer;
         color: var(--black-theme-main-color);
         padding-right: 20px;
+        margin-top: 20px;
     }
 
     .navbar__container__logo{

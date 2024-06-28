@@ -31,7 +31,7 @@ const Projects = () => {
           <div className="project">
             <h1 className="project-name">Passenger Count</h1>
             <div className="project-button ">
-              <a href="https://subway-count.web.app/" className="live">Live</a >
+              <a href="https://passenger-count-6dcbd.web.app" className="live">Live</a >
               <a href="https://github.com/Deepikatummala/passenger-count" className="source">Source Code</a >
             </div>
           </div>
@@ -54,6 +54,13 @@ const Projects = () => {
             <div className="project-button ">
               <a href="https://zomato-landing-page.web.app" className="live">Live</a >
               <a href="https://github.com/Deepikatummala/zomato-webpage" className="source" >Source Code</a >
+            </div>
+          </div>
+          <div className="project">
+            <h1 className="project-name">Trillion Dollar Home Page</h1>
+            <div className="project-button ">
+              <a href="https://deepikatummala.github.io/Trillion-dollar-page" className="live">Live</a >
+              <a href="https://github.com/Deepikatummala/Trillion-dollar-page" className="source" >Source Code</a >
             </div>
           </div>
         </div>

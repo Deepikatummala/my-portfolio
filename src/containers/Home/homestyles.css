@@ -7,6 +7,7 @@
     justify-content: center;
     background: linear-gradient(0deg, hsl(39, 38%, 79%, 0.52) , hsl(39, 38%, 79%, 0.52) ),
     url()   no-repeat center center/ cover;
+   
     
   
 
@@ -15,6 +16,8 @@
 .home__text-wapper{
     display: flex;
     justify-content: center;
+   
+   
     
 }
 h2{
@@ -93,6 +96,7 @@ h2{
     .home__text-wapper h1{
         font-size: 3rem;
         line-height: 5rem;
+        position: relative;
 
     }
     
@@ -110,7 +114,11 @@ h2{
     .home__text-wapper h1{
         font-size: 6rem;
         line-height: 8rem;
+        position: relative;
 
+    }
+    .home{
+        overflow: hidden;
     }
 }
 @keyframes typingEffectAnimation{
